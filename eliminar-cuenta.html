@@ -1,0 +1,144 @@
+Eliminar cuenta · HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminar cuenta – Apprist</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a1a;
+      background: #f7f6f2;
+      padding: 24px 16px 64px;
+    }
+    .container { max-width: 560px; margin: 0 auto; }
+    header { margin-bottom: 36px; }
+    header h1 { font-size: 26px; font-weight: 800; color: #1d9e75; margin-bottom: 6px; }
+    header p  { font-size: 13px; color: #6b7280; }
+ 
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 15px; font-weight: 700; color: #1a1a1a;
+      margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+    }
+    .card p { font-size: 14px; line-height: 1.7; color: #374151; margin-bottom: 8px; }
+    .card ol { padding-left: 18px; }
+    .card ol li { font-size: 14px; line-height: 1.7; color: #374151; margin-bottom: 4px; }
+ 
+    .badge {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #1d9e75;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .badge-red {
+      background: #fef2f2; color: #ef4444;
+    }
+ 
+    .btn-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1d9e75;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+    .btn-email:hover { background: #178a65; }
+ 
+    .warning {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: #991b1b;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+ 
+    footer { margin-top: 40px; font-size: 12px; color: #9ca3af; text-align: center; }
+    a { color: #1d9e75; }
+  </style>
+</head>
+<body>
+<div class="container">
+ 
+  <header>
+    <h1>Eliminar cuenta</h1>
+    <p>Apprist – Directorio de comercios de Av. Aristóbulo del Valle, Santa Fe</p>
+  </header>
+ 
+  <!-- Opción 1: desde la app -->
+  <div class="card">
+    <h2>
+      <span class="badge">Opción 1</span>
+      Desde la app (recomendado)
+    </h2>
+    <p>Si tenés la app instalada, podés eliminar tu cuenta directamente:</p>
+    <ol>
+      <li>Abrí <strong>Apprist</strong> en tu celular.</li>
+      <li>Tocá la pestaña <strong>Perfil</strong> en la barra inferior.</li>
+      <li>Bajá hasta la sección <strong>Cuenta</strong>.</li>
+      <li>Tocá <strong>"Eliminar mi cuenta"</strong>.</li>
+      <li>Confirmá la eliminación cuando te lo solicite la app.</li>
+    </ol>
+    <div class="warning">
+      ⚠️ Esta acción es permanente e irreversible. Se eliminarán tu perfil, favoritos, historial de pedidos y todos los datos asociados.
+    </div>
+  </div>
+ 
+  <!-- Opción 2: por email -->
+  <div class="card">
+    <h2>
+      <span class="badge" style="background:#eff6ff;color:#3b82f6;">Opción 2</span>
+      Por correo electrónico
+    </h2>
+    <p>Si ya no tenés la app instalada o no podés acceder a tu cuenta, escribinos con el email que usaste para registrarte:</p>
+    <a class="btn-email" href="mailto:appristobulo.app@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta&body=Hola%2C%20quiero%20solicitar%20la%20eliminaci%C3%B3n%20de%20mi%20cuenta%20de%20Apprist.%0A%0AEmail%20de%20mi%20cuenta%3A%20">
+      ✉ Enviar solicitud por email
+    </a>
+    <p style="margin-top: 12px; font-size: 13px; color: #6b7280;">
+      Procesamos las solicitudes en un plazo máximo de <strong>30 días hábiles</strong>.
+      Se eliminarán todos los datos personales asociados a tu cuenta.
+    </p>
+  </div>
+ 
+  <!-- Datos que se eliminan -->
+  <div class="card">
+    <h2>¿Qué datos se eliminan?</h2>
+    <p>Al eliminar tu cuenta se borran permanentemente:</p>
+    <ol>
+      <li>Tu perfil (nombre y email)</li>
+      <li>Historial de favoritos e intereses</li>
+      <li>Historial de pedidos realizados</li>
+      <li>Token de notificaciones push</li>
+      <li>Si sos comerciante: datos del comercio, productos y promociones publicadas</li>
+    </ol>
+  </div>
+ 
+  <footer>
+    ¿Preguntas? <a href="mailto:appristobulo.app@gmail.com">appristobulo.app@gmail.com</a> · <a href="./privacy-policy.html">Política de Privacidad</a>
+  </footer>
+ 
+</div>
+</body>
+</html>
+ 
